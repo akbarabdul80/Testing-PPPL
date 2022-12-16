@@ -3,9 +3,9 @@ package org.example.utils;
 public class Cons {
 
     // Size
-    public static final String SIZE_XS = "XS";
-    public static final String SIZE_S = "S";
-    public static final String SIZE_M = "M";
-    public static final String SIZE_L = "L";
-    public static final String SIZE_XL = "XL";
+    public static final Integer SIZE_XS = 0;
+    public static final Integer SIZE_S = 1;
+    public static final Integer SIZE_M = 2;
+    public static final Integer SIZE_L = 3;
+    public static final Integer SIZE_XL = 4;
 }
