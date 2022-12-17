@@ -29,7 +29,10 @@ public class ShippingCheckoutPage {
         driver.findElement(By.cssSelector("button[title='Continue']")).click();
     }
 
-    Select countrySelectElement = new Select(driver.findElement(country));
+    public void selectCountry(String country) {
+        Select select = new Select(driver.findElement(this.country));
+        select.selectByVisibleText(country);
+    }
 
     public void insertShippingAddress(String firstName, String lastName, String company, String address1, String address2, String address3, String city, String state, String zip, String country, String telephone) {
         driver.findElement(this.firstName).sendKeys(firstName);

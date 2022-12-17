@@ -61,7 +61,6 @@ class ProductPageTest {
 
         productPage.clickCheckout();
     }
-
     @Test
     @Order(2)
     void testCheckout() {
